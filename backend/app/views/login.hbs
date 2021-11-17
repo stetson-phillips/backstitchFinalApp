@@ -1,0 +1,85 @@
+<div>
+  <div class="login-backdrop"></div>
+  <div class="login-panel">
+    <div class="signin-panel">
+      <h1 style="text-align:center;margin-top:30%">
+        Welcome Back!
+      </h1>
+      <form method="post">
+        <input
+          class="signupInput"
+          type="text"
+          required
+          name="username"
+          placeholder="Username"
+        /><br />
+        <input
+          class="signupInput"
+          type="password"
+          id="password"
+          required
+          name="password"
+          placeholder="Password"
+        /><br />
+        <button
+          type="submit"
+          style="align:center;background:transparent;border:1px solid white;color:white;;margin-top:10px"
+        >
+          Sign In
+        </button>
+      </form>
+    </div>
+    <div class="signup-panel">
+      <h1 style="margin-top:20%">Create Account</h1>
+      <form action="/register" method="post">
+        <input
+          class="signupInput"
+          type="text"
+          id="name"
+          required
+          name="name"
+          placeholder="Name"
+        /><br />
+        <input
+          class="signupInput"
+          type="text"
+          id="username"
+          required
+          name="username"
+          placeholder="UserName"
+        /><br />
+        <input
+          class="signupInput"
+          type="password"
+          id="password"
+          required
+          name="password"
+          placeholder="Password"
+        /><br />
+        <button
+          type="submit"
+          style="background-color: #009966;border:none;color:white;margin-top:10px"
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+  button { border-radius: 20px; padding: 10px 40px; } button:hover {
+  border-radius: 20px; padding: 10px 40px; transform: scale(1.1); } .signupInput
+  { margin: 5px; border: none; border-radius: 2px; background-color: #e8e8e8;
+  height: 30px; width: 200px; } .login-backdrop { background-color: black;
+  opacity: 0.7; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0;
+  cursor: pointer; z-index: 999; } .signin-panel { overflow-y: auto;
+  background-color: #009966; position: absolute; top: 40vh; left: 50vw;
+  transform: translate(-100%, -50%); height: 400px; width: 400px; z-index: 999;
+  border-radius: 10px; border-top-right-radius: 0; border-bottom-right-radius:
+  0; text-align: center; color: white; } .signup-panel { overflow-y: auto;
+  background-color: white; position: absolute; top: 40vh; left: 50vw; transform:
+  translateY(-50%); height: 400px; width: 400px; z-index: 999; border-radius:
+  10px; border-top-left-radius: 0; border-bottom-left-radius: 0; text-align:
+  center; color: #009966; }
+</style>

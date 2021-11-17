@@ -1,0 +1,27 @@
+{
+  "name": "backstitch-app",
+  "version": "1.0.0",
+  "description": "RSS feed viewer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "stetsonphillips",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.9.0",
+    "rss-parser": "^3.12.0",
+    "rss-url-parser": "^2.2.2"
+  }
+}
