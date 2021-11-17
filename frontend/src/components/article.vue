@@ -1,8 +1,8 @@
 <template>
   <div style="margin-left:10px;">
     <div class="article-preview article">
-      <div class="articleimg"><img src="../assets/logo.png" alt="" /></div>
       <!--Ideally this would be linked to RSS article image-->
+      <div class="articleimg"><img src="../assets/logo.png" alt="" /></div>
       <div id="article-pub">
         <p>{{ formatDate(published) }}</p>
       </div>

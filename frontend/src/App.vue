@@ -8,7 +8,6 @@
       @sort-by-titles="sortByTitles"
       @sort-by-date="sortByDate"
       @sort-by-description="sortByDescription"
-      @login-changed="changeLogin"
       @add-content="changeContent"
     ></Sidebar>
     <div>
@@ -87,9 +86,6 @@ export default {
             return obj.title === selectedTitle;
           })[0].url
       );
-    },
-    changeLogin() {
-      this.openLogin = this.openLogin ? false : true;
     },
     sortByTitles() {
       this.currentSort = "title";
